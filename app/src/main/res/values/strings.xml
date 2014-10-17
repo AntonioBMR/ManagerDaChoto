@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ManagerDaCHOTO</string>
+    <string name="anadir">Añadir</string>
+    <string name="borrar">Borrar</string>
+    <string name="editar">Editar</string>
+    <string name="nombre">Nombre</string>
+    <string name="hazte">Hazte equipos!!!</string>
+    <string name="telefono">Telefono</string>
+    <string name="media">Media</string>
+</resources>
