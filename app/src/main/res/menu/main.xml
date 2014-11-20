@@ -5,6 +5,12 @@
         android:title="Añadir"
       />
     <item android:id="@+id/hazte"
-        android:title="Hazte equipos!!"
+        android:title="Crear equipos!"
+        />
+    <item android:id="@+id/ordenarM"
+        android:title="Ordenar por media "
+        />
+    <item android:id="@+id/ordenarN"
+        android:title="Ordenar por nombre"
         />
 </menu>

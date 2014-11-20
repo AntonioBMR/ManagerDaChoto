@@ -24,7 +24,7 @@ public class AdaptadorArrayList extends ArrayAdapter<Jugador>{
     private ViewHolder vh;
 
     static class ViewHolder{
-        public TextView tv,tv1, tv2,tv3,tv4,tv5;
+        public TextView tvt,tvt1, tvt2,tvt3,tv,tv1,tv2,tv3;
         public ImageView iv;
         public MenuItem item;
         public int posicion;
@@ -44,30 +44,26 @@ public class AdaptadorArrayList extends ArrayAdapter<Jugador>{
             convertView = i.inflate(recurso, null);
             vh = new ViewHolder();
             vh.item=(MenuItem)convertView.findViewById(R.id.hazte);
-            vh.tv3=(TextView)convertView.findViewById(R.id.textView2);
-            vh.tv4=(TextView)convertView.findViewById(R.id.textView3);
-            vh.tv5=(TextView)convertView.findViewById(R.id.textView4);
-            vh.tv=(TextView)convertView.findViewById(R.id.tvTexto);
-            vh.tv1=(TextView)convertView.findViewById(R.id.tvTexto1);
-            vh.tv2=(TextView)convertView.findViewById(R.id.tvTexto2);
+            vh.tv3=(TextView)convertView.findViewById(R.id.textView3);
+            vh.tv2=(TextView)convertView.findViewById(R.id.textView2);
+            vh.tv1=(TextView)convertView.findViewById(R.id.textView1);
+            vh.tv=(TextView)convertView.findViewById(R.id.textView);
+            vh.tvt=(TextView)convertView.findViewById(R.id.tvTexto);
+            vh.tvt1=(TextView)convertView.findViewById(R.id.tvTexto1);
+            vh.tvt2=(TextView)convertView.findViewById(R.id.tvTexto2);
+            vh.tvt3=(TextView)convertView.findViewById(R.id.tvTexto3);
             vh.iv=(ImageView)convertView.findViewById(R.id.ivImagen);
             convertView.setTag(vh);
         }else{
+            //comentario
             vh=(ViewHolder)convertView.getTag();
         }
-        if(!lista.get(position).getEquip()){
-            if((position)%2==0){
-                vh.iv.setImageResource(R.drawable.barca);
-            }else{
-                vh.iv.setImageResource(R.drawable.madrid);
-            }
-        }else{
-            vh.iv.setImageResource(R.drawable.persona);
-        }
         vh.posicion=position;
-        vh.tv.setText(lista.get(position).getMedia()+"");
-        vh.tv1.setText(lista.get(position).getNombre().toString());
-        vh.tv2.setText(lista.get(position).getTelefono().toString());
+        vh.tvt.setText(lista.get(position).getMedia()+"");
+        vh.tvt1.setText(lista.get(position).getDorsal()+"");
+        vh.tvt2.setText(lista.get(position).getNombre().toString());
+        vh.tvt3.setText(lista.get(position).getTelefono().toString());
+//falta dorsal
         vh.iv.setTag(position);
         return convertView;
     }

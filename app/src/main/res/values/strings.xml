@@ -6,7 +6,15 @@
     <string name="borrar">Borrar</string>
     <string name="editar">Editar</string>
     <string name="nombre">Nombre</string>
+    <string name="dorsal">Dorsal</string>
     <string name="hazte">Hazte equipos!!!</string>
     <string name="telefono">Telefono</string>
     <string name="media">Media</string>
+    <string name="btOk">OK</string>
+    <string name="btNo">NO</string>
+    <string name="title_activity_actividad_equipo">ActividadEquipo</string>
+    <string name="ordenaM">Ordenar por Media</string>
+    <string name="ordenaN">Ordenar por Nombre</string>
+    <string name="action_settings">Settings</string>
+
 </resources>

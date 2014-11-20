@@ -15,7 +15,7 @@
         android:id="@+id/nombre">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:text="Nombre"
             android:id="@+id/nomA" />
@@ -23,8 +23,31 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/et1A"
+            android:id="@+id/et2A"
             android:layout_weight="0.87" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:weightSum="1"
+        android:id="@+id/dorsal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Dorsal"
+            android:id="@+id/dorA" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et1A"
+            android:numeric="integer"
+            android:inputType="number"
+            android:layout_weight="0.9" />
     </LinearLayout>
 
     <LinearLayout
@@ -35,7 +58,7 @@
         android:weightSum="1">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:text="Teléfono"
             android:id="@+id/telA" />
@@ -43,7 +66,7 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/et2A"
+            android:id="@+id/et3A"
             android:inputType="number"
             android:layout_weight="0.88" />
     </LinearLayout>
@@ -56,7 +79,7 @@
         android:weightSum="1">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:text="Media"
             android:id="@+id/medA" />
@@ -69,6 +92,5 @@
             android:inputType="number"
             android:layout_weight="0.90" />
     </LinearLayout>
-
 
 </LinearLayout>
