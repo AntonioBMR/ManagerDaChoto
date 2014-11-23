@@ -517,7 +517,6 @@ public class Main extends Activity implements AdapterView.OnItemLongClickListene
         ad = new AdaptadorArrayList(this, R.layout.lista_detalle, js);
         ListView lv = (ListView) findViewById(R.id.lvLista);
         lv.setAdapter(ad);
-
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

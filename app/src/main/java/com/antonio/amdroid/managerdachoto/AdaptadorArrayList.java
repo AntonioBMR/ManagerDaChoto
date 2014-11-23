@@ -63,7 +63,7 @@ public class AdaptadorArrayList extends ArrayAdapter<Jugador>{
         vh.tvt1.setText(lista.get(position).getDorsal()+"");
         vh.tvt2.setText(lista.get(position).getNombre().toString());
         vh.tvt3.setText(lista.get(position).getTelefono().toString());
-//falta dorsal
+        vh.iv.setImageResource(R.drawable.persona);
         vh.iv.setTag(position);
         return convertView;
     }
